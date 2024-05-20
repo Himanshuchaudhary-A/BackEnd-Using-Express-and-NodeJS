@@ -1,0 +1,29 @@
+For experimental in json file ->>>>>>
+
+The --experimental-json-modules flag is used in Node.js to enable ECMAScript (ES) module support for JSON modules. 
+This is a feature that's currently under development and not yet fully supported, hence the 'experimental' label. 
+It allows you to import JSON files as ES modules. 
+However, please note that this feature might not be stable and its usage and behavior could change in future Node.js versions.
+
+
+For proxy->>
+
+Proxies in backend development are used for various purposes, such as load balancing, caching, data transformation, or security. 
+They act as intermediaries between a client and a server.
+
+If you don't use a proxy, the client will communicate directly with the server. This might lead to several issues. 
+For instance, if the server is down, the client won't be able to access the data. 
+Proxies can help by providing a fallback option, like a cache. Also, they can enhance security by hiding the server's identity, 
+preventing direct access, and filtering malicious requests.
+
+
+then what does CORS package do and how ir  is differnet from proxy->>
+
+Cross-Origin Resource Sharing (CORS) is a mechanism that allows web browsers to make requests to a different domain than the one 
+the user is currently on. It's a security feature that prevents a website from making requests to a different server without permission. 
+A proxy, on the other hand, is a server that acts as an intermediary between a client and another server. 
+It can be used for various purposes, such as load balancing, caching, or in this case, to add necessary headers 
+(like CORS headers) that the origin server might not include.
+While a proxy can be used to implement CORS, they are not the same thing. A proxy is a more general concept, a
+and CORS is a specific use case for it. If you don't use a proxy, your server would need to include the necessary CORS headers in its 
+responses. If it doesn't, the browser will block the request due to the Same-Origin Policy.
